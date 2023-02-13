@@ -283,6 +283,7 @@ html {
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .heroimg,
+  .contact-img,
   .resume-img {
     background-attachment: scroll;
     min-height: 400px;
