@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <meta name="description" content="Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script>
+      function preload(images) {
+        for (let i = 0; i < images.length; i++) {
+          let link = document.createElement("link");
+          link.rel = "preload";
+          link.as = "image";
+          link.href = images[i];
+          document.head.appendChild(link);
+          console.log(link);
+        }
+      }
+      const imageUrls = ["/images/personal.jpg", "/images/hero.jpg", "/images/contact.jpg", "/images/resumeSec.jpg"];
+      preload(imageUrls);
+    </script>
+
+
+  </head>
+  <body>
+
+    <div class="nav-top" id="nav">
+      <div>
+        <a href="#home" class="home active">Home</a>
+        <a href="#about" class="about"">About Me</a>
+        <a href="#resume" class="resume">Resume</a>
+        <a href="#contact" class="contact">Contact</a>
+        <div>
+          <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <em class="fa fa-bars"></em>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="progressBar"></div>
+    <div class="heroimg container section" id="home">
+      <div class="display-middle">
+        <h2 class="hero-text">My Portfolio</h2>
+      </div>
+    </div>
+
+      <div class="about-sec container">
+        <div class="text-center content-center">
+          <h2 class="section" id="about">About Me</h2>
+          <p><em>I love programming</em></p>
+          <p>
+            I am currently trying to achieve bachelor's degree in Software
+            Engineering at the University of Bradford located in United Kingdom, I
+            am graduating in 2023. My aim is to be in a senior Software
+            Engineer/Computer Scientist position. Always ready to learn new things
+            and improve as a programmer. I find programming fun and I am extremely
+            interested in learning new things, so far it has been relatively easy
+            to pick up new programming languages since most languages are similar
+            and have similar concepts. My ambition is to acquire skills to create
+            and work on successful Applications and Software.
+          </p>
+          <div class="grid-container">
+            <div class="grid-col">
+              <p class="name">
+                <strong
+                  ><em class="fa-solid fa-user"></em>Ignas Zyvatkauskas</strong
+                >
+              </p>
+              <img
+                src="./images/personal.jpg"
+                alt="photo of me"
+                width="350"
+                height="100"
+              />
+              <br />
+            </div>
+            <div>
+              <p>
+                I have been using a computer for as long as I can remember, always
+                had a passion for it. Started learning programming while I was
+                working before the university using Udemy, Codecademy and various
+                other resources to learn new concepts and programming languages I
+                found interesting, right now I am also using tryhackme to learn
+                and practice new concepts. During my years in the University, I
+                found a passion for programming, I enjoy many different
+                programming fields and love learning new languages and
+                technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="resume-img container section" id="resume">
+      <div class="display-middle">
+        <h2 class="resume-text">Resume</h2>
+      </div>
+    </div>
+
+    <div class="resume-sec">
+      <h2 class="text-center">History</h2>
+      <div class="text-center content-center">
+        <p>
+          During my time studying programming I have worked on number of
+          different personal as well as university projects, some of which are
+          full stack web development, learning Django, making UI applications
+          with java, using C# made a three-tier structured app, with python
+          worked with AI specifically with neural networks and machine learning
+          as well as various other algorithms. You can view some of my projects
+          in my GitHub.
+        </p>
+
+        <p>
+          My biggest benefit is that I am a quick learner, and I am adaptable, I
+          learn new things and concepts relatively easy and quickly. I like to
+          apply what I have learnt and try to develop my own things or ideas. I
+          am a person who likes to do things right and I go the extra mile to
+          achieve that, it is the competitive drive that makes me want to
+          improve my skills and improve as a Software Engineer. Currently my
+          most proficient languages are Java, Python, CSS, MySQL, PHP, HTML,
+          JavaScript. Recently I have started to learn web development and find
+          it extremely interesting especially with Next.js and Django, although
+          I have not released any websites with mentioned frameworks I am
+          currently working on some and cannot wait to finish them. I learn new
+          things every day and I am not scared to start or learn something new.
+          I Managed to achieve 82%, 83%, 88%, 87% for modules which were based
+          on developing using java, python, web development, and working with
+          SQL database which confirms my knowledge of previously mentioned
+          languages
+        </p>
+      </div>
+      <h2 class="text-center">Skills</h2>
+      <div class="grid-col grid-container">
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-python"></em>Python</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center" style="width: 0%; font-size: 0;">
+              70%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-python"></em>Java</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center " style="width: 0%; font-size: 0;">
+              65%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-css3"></em>CSS</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center"  style="width: 0%; font-size: 0;">
+              65%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-html5"></em>HTML</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center" style="width: 0%; font-size: 0;">
+              70%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-js"></em>JavaScript</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center " style="width: 0%; font-size: 0;">
+              65%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-php"></em>PHP</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center" style="width: 0%; font-size: 0;">
+              75%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-regular fa-c"></em>C#</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center" style="width: 0%; font-size: 0;">
+              55%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-node-js"></em>Next.js</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center" style="width: 0%; font-size: 0;">
+              60%
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <strong><em class="fa-brands fa-python"></em>Django</strong>
+          </p>
+          <div class="lower-color">
+            <div class="container upper-color text-center" style="width: 0%; font-size: 0;">
+              60%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-img container section" id="contact">
+      <div class="display-middle">
+        <h2 class="resume-text">Contact</h2>
+      </div>
+    </div>
+
+    <div class="contact-sec container">
+      <h3 class="text-center contact-text">My Contact</h3>
+      <div class="contact-info">
+        <div class="content-center">
+          <p>
+            <strong
+              ><em class="fa-solid fa-location-dot contact-text"></em>Current Location:
+              Torrevieja, Spain</strong
+            >
+          </p>
+          <p>
+            <strong
+              ><em class="fa-solid fa-envelope contact-text"></em>Email:
+              Ignaszyv@gmail.com</strong
+            >
+          </p>
+          <p>
+            <strong
+              ><em class="fa-solid fa-phone contact-text"></em>Phone: +447533181611</strong
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form content-center text-center ">
+      <em class="text-center" style="color: white">Send me a message!</em>
+      <form action="#">
+        <div>
+          <input type="text" placeholder="Name" required name="Name" />
+          <input type="text" placeholder="Phone" name="Phone" />
+          <input type="email" placeholder="Email" required name="Email" />
+        </div>
+        <input
+          class="message"
+          type="text"
+          placeholder="Message"
+          required
+          name="Message"
+        />
+        <div>
+          <button class="form-button" type="submit">
+            <p><em class="fa-solid fa-paper-plane contact-text"></em>Send Message</p>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
